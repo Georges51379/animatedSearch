@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>Animated Search</title>
@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
-    <div class="search-box">
+    <div class="search-wrapper">
       <input type="text" placeholder="Type to search..">
       <div class="search-icon">
         <i class="fas fa-search"></i>
       </div>
-<div class="cancel-icon">
+      <div class="cancel-icon">
         <i class="fas fa-times"></i>
       </div>
-<div class="search-data">
-</div>
-</div>
+      <div class="data">
+      </div>
+    </div>
 <script>
-      const searchBox = document.querySelector(".search-box");
+      const searchBox = document.querySelector(".search-wrapper");
       const searchBtn = document.querySelector(".search-icon");
       const cancelBtn = document.querySelector(".cancel-icon");
       const searchInput = document.querySelector("input");
-      const searchData = document.querySelector(".search-data");
+      const searchData = document.querySelector(".data");
       searchBtn.onclick =()=>{
         searchBox.classList.add("active");
         searchBtn.classList.add("active");

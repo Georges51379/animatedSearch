@@ -9,13 +9,13 @@ html,body{
   display: grid;
   height: 100%;
   place-items: center;
-  background: #664AFF;
+  background: #2C3531;
 }
 ::selection{
-  color: #fff;
+  color: #116466;
   background: #664AFF;
 }
-.search-box{
+.search-wrapper{
   position: relative;
   height: 60px;
   width: 60px;
@@ -23,10 +23,10 @@ html,body{
   box-shadow: 5px 5px 30px rgba(0,0,0,.2);
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.search-box.active{
+.search-wrapper.active{
   width: 350px;
 }
-.search-box input{
+.search-wrapper input{
   width: 100%;
   height: 100%;
   border: none;
@@ -38,13 +38,13 @@ html,body{
   opacity: 0;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.search-box input.active{
+.search-wrapper input.active{
   opacity: 1;
 }
-.search-box input::placeholder{
+.search-wrapper input::placeholder{
   color: #a6a6a6;
 }
-.search-box .search-icon{
+.search-wrapper .search-icon{
   position: absolute;
   right: 0px;
   top: 50%;
@@ -61,7 +61,7 @@ html,body{
   z-index: 1;
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.search-box .search-icon.active{
+.search-wrapper .search-icon.active{
   right: 5px;
   height: 50px;
   line-height: 50px;
@@ -71,7 +71,7 @@ html,body{
   color: #fff;
   transform: translateY(-50%) rotate(360deg);
 }
-.search-box .cancel-icon{
+.search-wrapper .cancel-icon{
   position: absolute;
   right: 20px;
   top: 50%;
@@ -81,17 +81,17 @@ html,body{
   cursor: pointer;
   transition: all 0.5s 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.search-box .cancel-icon.active{
+.search-wrapper .cancel-icon.active{
   right: -40px;
   transform: translateY(-50%) rotate(360deg);
 }
-.search-box .search-data{
+.search-wrapper .data{
   text-align: center;
   padding-top: 7px;
   color: #fff;
   font-size: 18px;
   word-wrap: break-word;
 }
-.search-box .search-data.active{
+.search-wrapper .data.active{
   display: none;
 }
